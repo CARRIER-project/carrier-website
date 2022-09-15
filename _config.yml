@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Detection and primary and secondary prevention of coronary artery disease
 baseurl: "/carrier-website"
 url: "https://carrier-project.github.io"
-source: .
+
 sections:
   - title: Intro
     url: index.html

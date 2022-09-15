@@ -18,20 +18,17 @@
     </div>
 </section>
 <section class="nav-section">
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <div class="navbar-item">
-                <h1>CARRIER</h1>
-            </div>
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-               data-target="navbarBasicExample">
+            <h1 class="navbar-item">CARRIER logo</h1>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarData">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navBarData" class="navbar-menu">
             <div class="navbar-start">
                 {% for item in site.sections %}
                 <a class="navbar-item" href="{{item.url}}">
@@ -39,22 +36,22 @@
                 </a>
                 {% endfor %}
             </div>
+            <div class="navbar-end"></div>
 
 
         </div>
     </nav>
 </section>
 <section>
-    <div class="container">
-    <h1 class="title"> {{ page.title }}</h1>
-    {{content}}
+    <div class="container is-fluid">
+        <h1 class="title"> {{ page.title }}</h1>
+        {{content}}
     </div>
 </section>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="{{ site.baseurl }}/assets/script.js"></script>
 </body>
 </html>
 
-<body>
-
-
-</body>
 </html>
