@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Detection and primary and secondary prevention of coronary artery disease
 baseurl: "/carrier-website"
 url: "https://carrier-project.github.io"
-
+source: .
 sections:
   - title: Intro
     url: index.html
@@ -35,12 +35,6 @@ sections:
   - title: Privacy
     url: privacy.html
 
-
-# Build settings
-remote_theme: pages-themes/cayman@v0.2.0
-
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
 
 # Exclude from processing.
 # The following items will not be processed, by default.
