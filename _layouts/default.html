@@ -9,19 +9,28 @@
 <body>
 <section class="hero">
     <div class="hero-body">
+        <div class="columns">
+            <div class="column is-four-fifths">
         <p class="title">
             {{ site.title }}
         </p>
         <p class="subtitle">
             {{site.description}}
         </p>
+            </div>
+            <div class="column">
+                <figure class="image is-fullwidth">
+                <img src="assets/logo_monochrome_white.png">
+                </figure>
+            </div>
+        </div>
     </div>
 </section>
 <section class="nav-section">
     <nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
 
-            <a class="navbar-item" href="{{ site.url | append: site.baseurl | append: "/"}}"><img src="assets/logo_monochrome.png"></a>
+            <a class="navbar-item" href="{{ site.url | append: site.baseurl | append: "/"}}"><img src="assets/logo_monochrome_red.png"></a>
             <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarData">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
