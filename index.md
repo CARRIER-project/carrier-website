@@ -1,15 +1,12 @@
 ---
 title: Introduction
-description: something
+description: Introduction to the CARRIER project.
 ---
-# This is some content
-Something about the carrier project
+CARRIER is a research project whose objective is to make the best use of available data for the prevention of cardiovascular disease.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis sagittis odio. Pellentesque cursus luctus mauris, at dapibus mauris convallis in. Integer pretium vitae orci euismod vehicula. Cras in mi nec nulla facilisis egestas. Vivamus quis purus quis felis finibus ultrices in eu neque. Nam ullamcorper ex at orci aliquam blandit. Etiam ac consequat est. Mauris a nisi odio. Pellentesque auctor eros vitae lectus posuere, pharetra iaculis dolor iaculis.
+The consortium behind the CARRIER project consists of clinicians, data scientists, health service researchers and legal experts who are working together to develop a data-driven, participative, self-care intervention. 
 
-Proin condimentum ultricies libero, vitae condimentum turpis commodo non. Fusce mollis vulputate ex id finibus. Vestibulum tincidunt efficitur lectus at rhoncus. Fusce pellentesque dui nisl, sed laoreet ipsum dictum consectetur. Duis sagittis nibh et ligula aliquet, gravida bibendum ante maximus. Praesent vehicula justo a lorem pulvinar, et mattis metus euismod. Aliquam erat volutpat. Nam odio tellus, fermentum et mi nec, mollis dapibus ipsum. Nam id aliquet est. Suspendisse lacinia, metus sed ultrices posuere, orci enim ultrices ligula, a mollis felis enim nec nulla. Phasellus et dui bibendum, tempor libero ac, convallis elit. Sed sagittis justo urna, in molestie diam faucibus at. Vivamus maximus libero tincidunt est venenatis, sit amet convallis sapien blandit.
+CARRIER will combine clinical data from different sources (hospitals and general practitioners) with socio-economic data from CBS to build a prediction models that will identify citizens at risk of developing cardiovascular disease. We propose to invite these citizens to a personalised lifestyle intervention informed by data-driven insights. Citizen and clinicians will agree on a personalised health plan taking into account personal preferences and effectiveness. Finally, the long-term adherence to the personalised health plan will the support of an eCoach. 
 
-Pellentesque condimentum, tortor feugiat suscipit mollis, libero dui tristique nibh, ac eleifend tortor neque vitae dui. Nullam ac ligula at nisi placerat interdum. Nunc orci neque, pharetra vel arcu eget, elementum accumsan sem. Donec cursus dolor ultricies nunc pharetra ornare. Phasellus maximus nisi et dui malesuada consequat. Mauris leo elit, feugiat nec arcu id, pharetra eleifend quam. Integer quis aliquam nunc. Integer iaculis ex vitae lectus viverra sodales in eget tellus. Nulla facilisi. In hac habitasse platea dictumst. Praesent est purus, suscipit id mollis at, sagittis a lectus. Aenean tempor lacinia ante id rutrum. Aliquam posuere ex aliquam dolor pretium, vel ultricies enim auctor. Proin at mattis nisl. Mauris vitae mauris vitae purus euismod rutrum id eget dolor.
 
-Fusce ut sodales leo. Aenean et elit efficitur, aliquam est eu, rhoncus libero. Ut ac orci blandit, sodales turpis eu, bibendum massa. Aliquam ac luctus enim, nec iaculis augue. Aenean mattis aliquam ligula ac porta. Proin purus nibh, finibus congue ipsum fermentum, suscipit elementum ex. Nunc et laoreet est. Donec convallis massa ligula, vitae varius mi porta sed. Donec sodales mauris non quam congue, ut accumsan eros condimentum. Vestibulum vel erat gravida, lobortis tellus ac, cursus diam. In vel eros eget nisi bibendum fringilla a eget lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis eros felis, dapibus eget nisl ac, egestas bibendum quam. Suspendisse quis lectus a orci vestibulum elementum. Aliquam sagittis semper venenatis.
 
