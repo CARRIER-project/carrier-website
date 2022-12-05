@@ -8,3 +8,6 @@ Currently there are 4:
 - [privacy.md](https://github.com/CARRIER-project/carrier-website/blob/main/privacy.md)
 - [publications.md](https://github.com/CARRIER-project/carrier-website/blob/main/publications.md)
 - [team.md](https://github.com/CARRIER-project/carrier-website/blob/main/team.md)
+
+
+Since github actions rebuilds the website every time you make a change, it might take a few minutes for the changes to become visible.
