@@ -1,7 +1,9 @@
 ---
 title: Rights of data subjects
 ---
-If you think your data might be being used in the CARRIER project and you do not want your data to be used, please refer to your hospital's website to exercise your data rights. If you opt out from your data being used for research, it will not be used in the CARRIER project.
+Data subjects have the right to opt out.
+
+If you do not want your data to be used in the CARRIER project, please refer to your hospital's website to exercise your data rights. 
 
 If you are a patient at Maastricht UMC+, you can exercise your data rights here: <https://www.mumc.nl/patient-bezoeker/praktisch/rechten-en-plichten/uw-medische-gegevens>
 

@@ -22,6 +22,9 @@ On top of that, we use privacy preserving techniques (secret sharing, homomorphi
 
 We store the data in secure IT servers throughout the duration of the project and four years after the publication of the results of our study, for reproducibility purposes.
 
+## **Which personal data we process**
+We only process the data we need to make the prediction model as accurate as possible, according to the literature. These are: gender, birth year, weight, area of residence, blood pressure, cholesterol, comorbidities, diagnosis of cardiovascular disease (CVD), hospitalisation for CVD (CVD), family history of cardiovascular disease.
+
 
 ### **Contact details UM**
 If you have any questions about this privacy statement, if you would like to know more about how UM handles personal data or if you have a complaint, please contact:
@@ -34,4 +37,3 @@ privacy@maastrichtuniversity.nl
 
 You can also contact UM's data protection officer directly via fg@maastrichtuniversity.nl.
 
-Which personal data we process
