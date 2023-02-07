@@ -2,7 +2,7 @@
 title: Privacy Statement
 ---
 
-Your privacy is important for the CARRIER project. That is why we put all the necessary measures in place to reduce the risk of. Your personal data may be processed in the CARRIER project for a specific purpose. 
+Your privacy is important for the CARRIER project. That is why we put all the necessary measures in place to protect it. Your personal data may be processed in the CARRIER project only for a specific purpose. 
 
 ## **What is the purpose of data processing within the CARRIER project?**
 
