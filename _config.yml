@@ -34,6 +34,8 @@ sections:
     url: publications.html
   - title: Privacy
     url: privacy.html
+  - title: Model
+    url: model.html
 
 
 # Exclude from processing.
