@@ -1,18 +1,19 @@
 function fetchAgeData() {
   const ageInput = document.getElementById('ageInput').value;
-  const apiUrl = 'https://api.example.com/query'; // Replace with the actual API URL
+  const apiUrl = 'https://carrier-model-exposer-5cfb51351e5b.herokuapp.com/'; // Replace with the actual API URL
 
   // Assuming the API expects an 'age' parameter
-  const queryParams = new URLSearchParams({ age: ageInput });
-
-  fetch(`${apiUrl}?${queryParams}`)
-    .then(response => response.json())
-    .then(data => {
-      displayResult(data); // Call function to display the result
-    })
-    .catch(error => {
-      console.error('Error fetching data:', error);
+  const requestBody = JSON.stringify({ age: ageInput });
+  
+  const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: requestBody,
     });
+
+	displayResult(response);
 }
 
 function displayResult(data) {
