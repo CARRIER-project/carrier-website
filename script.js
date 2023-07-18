@@ -5,7 +5,7 @@ function fetchAgeData() {
   // Assuming the API expects an 'age' parameter
   const requestBody = JSON.stringify({ age: ageInput });
   
-  const response = await fetch(url, {
+  const response = fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
