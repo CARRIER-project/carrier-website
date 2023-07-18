@@ -1,6 +1,6 @@
 function fetchAgeData() {
   const ageInput = document.getElementById('ageInput').value;
-  const apiUrl = 'https://carrier-model-exposer-5cfb51351e5b.herokuapp.com/'; // Replace with the actual API URL
+  const url = 'https://carrier-model-exposer-5cfb51351e5b.herokuapp.com/'; // Replace with the actual API URL
 
   // Assuming the API expects an 'age' parameter
   const requestBody = JSON.stringify({ age: ageInput });
