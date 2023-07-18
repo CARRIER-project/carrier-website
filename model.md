@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<script src="script.js"></script>
 # Enter Your Age
 
 <form>
@@ -12,5 +13,3 @@ layout: default
 <div id="resultContainer">
   <!-- The result will be displayed here -->
 </div>
-
-<script src="script.js"></script>
