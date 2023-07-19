@@ -12,3 +12,9 @@ Currently there are 4:
 
 
 Since github actions rebuilds the website every time you make a change, it might take a few minutes for the changes to become visible.
+
+## Running the site locally
+You can use docker to run jekyll locally:
+```bash
+docker run --rm -it -p 4000:4000 -v $PWD:/srv/jekyll jekyll/jekyll:3 jekyll serve
+```
