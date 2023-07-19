@@ -15,6 +15,7 @@ Since github actions rebuilds the website every time you make a change, it might
 
 ## Running the site locally
 You can use docker to run jekyll locally:
+
 ```bash
-docker run --rm -it -p 4000:4000 -v $PWD:/srv/jekyll jekyll/jekyll:3 jekyll serve
+docker run -p 4000:4000 -v $PWD:/srv/jekyll jekyll/jekyll:3 jekyll serve
 ```
