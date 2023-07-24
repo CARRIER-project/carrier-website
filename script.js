@@ -41,7 +41,7 @@ async function runModel() {
   var postalcode = document.getElementById('postalcodeInput').value;
   var housenumber = document.getElementById('housenumberInput').value;
   
-  var url = 'http://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
+  var url = 'https://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
 
   // Assuming the API expects an 'age' parameter
   var requestBody = "{"+
