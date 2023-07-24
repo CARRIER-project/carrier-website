@@ -19,3 +19,5 @@ You can use docker to run jekyll locally:
 ```bash
 docker run -p 4000:4000 -v $PWD:/srv/jekyll jekyll/jekyll:3 jekyll serve
 ```
+### Model deployement:
+The model deployement can be found here: https://github.com/CARRIER-project/risk-model-deployment/blob/main/README.md
