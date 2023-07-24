@@ -66,7 +66,7 @@ async function runModel() {
   
   const response = await fetch(url, {
       method: 'POST',
-	  mode: "cors",
+	  mode: "no-cors",
       headers: {
         'Content-Type': 'application/json'
       },
