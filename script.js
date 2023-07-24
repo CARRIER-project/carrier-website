@@ -43,7 +43,6 @@ async function runModel() {
   
   var url = 'https://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
 
-  // Assuming the API expects an 'age' parameter
   var requestBody = "{"+
                         "\"input\" : {"+
                        	"\"TC\" : \""+ TC + "\","+
@@ -67,6 +66,7 @@ async function runModel() {
   
   const response = await fetch(url, {
       method: 'POST',
+	  mode: "cors",
       headers: {
         'Content-Type': 'application/json'
       },
