@@ -55,12 +55,9 @@ What is your postalcode: <input type="string" id="postalcodeInput" placeholder="
 What is your housenumber: <input type="number" id="housenumberInput" placeholder="housenumber">
 <form>
 </form>
-<form>
-  <button type="button" onclick="runModel()">Submit</button>
-</form>
 
-### Interventions:
 
+Interventions:
 </form>
 Intervention SBP: <input type="number" id="intervention_sbp" placeholder="intervention_sbp">
 <form>
@@ -75,6 +72,10 @@ Intervention diet: <input type="radio" name="intervention_diet" id="very_low_int
 </form>
 <form>
 Intervention Exercise: <input type="radio" name="intervention_exercise" id="very_low_intervention_exercise" value ="true"/> 0-3 hours <input type="radio" name="intervention_exercise" id="low_intervention_exercise"/> 3-4.75 hours <input type="radio" name="intervention_exercise" id="medium_intervention_exercise"/> 4.75-8 hours <input type="radio" name="intervention_exercise" id="high_intervention_exercise"/> >8 hours <input type="radio" name="intervention_exercise" id="nothing_exercise"/> No intervention
+</form>
+
+<form>
+  <button type="button" onclick="runModel()">Submit</button>
 </form>
 
 <div id="resultContainer">

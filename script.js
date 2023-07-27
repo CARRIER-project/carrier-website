@@ -83,6 +83,32 @@ async function runModel() {
   
   var url = 'https://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
 
+  console.log("{"+
+                                      "\"input\" : {"+
+                                     	"\"TC\" : \""+ TC + "\","+
+                                     	"\"HDL\" : \""+ HDL + "\","+
+                                     	"\"age\" : \""+ age + "\","+
+                                      "\"antihypertensives\" : \""+ antihypertensives + "\","+
+                                     	"\"beta_blocking_agents\" : \""+ beta_blocking_agents + "\","+
+                                      "\"calcium_channel_blockers\" : \""+ calcium_channel_blockers + "\","+
+                                      "\"RAS_inhibitors\" : \"" + RAS_inhibitors  + "\","+
+                                      "\"lipid_modifying_agents\" : \""+ lipid_modifying_agents +"\","+
+                                     	"\"address_postcode\" : \""+ postalcode + "\","+
+                                      "\"address_house_number\" : \""+ housenumber + "\","+
+                                     	"\"CHAMPS_MVPA_score\" : \"" + champs + "\","+
+                                      "\"current_smoker\" : \""+ current_smoker+  "\","+
+                                      "\"eetscore\" : \""+ eetscore + "\","+
+                                     	"\"ex_smoker\" : \"" + ex_smoker + "\","+
+                                      "\"gender\" : \""+ gender + "\","+
+                                      "\"SBP\" : \""+ SBP +"\""+
+              						"intervention_smoking" : intervention_smoking +
+              						"intervention_exercise" : intervention_exercise +
+              						"intervention_diet" : intervention_diet +
+              						"intervention_sbp" : intervention_sbp +
+              						"intervention_ldl" : intervention_ldl +
+                                      "}"+
+                                     "}");
+
   var requestBody = "{"+
                         "\"input\" : {"+
                        	"\"TC\" : \""+ TC + "\","+
@@ -128,7 +154,6 @@ function displayResult(json) {
   if( json["probabilities"]["CVD"] != null){
     text =`Your risk of CVD is ${ json["probabilities"]["CVD"] } %`
   }else{
-
     text =`Your risk of CVD is ${ json["baseline"]["probabilities"]["CVD"] } %, the intervention will change it to ${ json["changes"]["probabilities"]["CVD"] } %`
   }
   resultContainer.textContent = text;
