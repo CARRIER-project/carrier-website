@@ -59,6 +59,24 @@ What is your housenumber: <input type="number" id="housenumberInput" placeholder
   <button type="button" onclick="runModel()">Submit</button>
 </form>
 
+### Interventions:
+
+</form>
+Intervention SBP: <input type="number" id="intervention_sbp" placeholder="intervention_sbp">
+<form>
+</form>
+Intervention LDL: <input type="number" id="intervention_ldl" placeholder="intervention_ldl">
+<form>
+<form>
+Intervention smoking: <input type="radio" name="intervention_smoking" id="yes_intervention_smoking" value ="true"/> Yes <input type="radio" name="intervention_smoking" id="no_intervention_smoking"/> No <input type="radio" name="intervention_smoking" id="nothing_smoking"/> No intervention
+</form>
+<form>
+Intervention diet: <input type="radio" name="intervention_diet" id="very_low_intervention_diet" value ="true"/> Very low <input type="radio" name="intervention_diet" id="low_intervention_diet"/> Low <input type="radio" name="intervention_diet" id="medium_intervention_diet"/> Medium <input type="radio" name="intervention_diet" id="high_intervention_diet"/> High <input type="radio" name="intervention_diet" id="very_high_intervention_diet"/> Very High <input type="radio" name="intervention_diet" id="nothing_diet"/> No intervention
+</form>
+<form>
+Intervention Exercise: <input type="radio" name="intervention_exercise" id="very_low_intervention_exercise" value ="true"/> 0-3 hours <input type="radio" name="intervention_exercise" id="low_intervention_exercise"/> 3-4.75 hours <input type="radio" name="intervention_exercise" id="medium_intervention_exercise"/> 4.75-8 hours <input type="radio" name="intervention_exercise" id="high_intervention_exercise"/> >8 hours <input type="radio" name="intervention_exercise" id="nothing_exercise"/> No intervention
+</form>
+
 <div id="resultContainer">
   <!-- The result will be displayed here -->
 </div>

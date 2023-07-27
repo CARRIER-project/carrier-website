@@ -32,6 +32,44 @@ async function runModel() {
   if(!document.getElementById('male_gender').checked){
     gender = "female";
   }
+  
+  var intervention_smoking = null;
+  if(document.getElementById('no_intervention_smoking').checked){
+    intervention_smoking = "no";
+  }if(document.getElementById('yes_intervention_smoking').checked){
+    intervention_smoking = "yes";
+  }else{
+    intervention_smoking = null;
+  }
+  
+  var intervention_diet = null;
+  if(document.getElementById('very_low_intervention_diet').checked){
+       intervention_diet = "very_low";
+  } else if(document.getElementById('low_intervention_diet').checked){
+       intervention_diet = "low";
+  } else if(document.getElementById('medium_intervention_diet').checked){
+       intervention_diet = "medium";
+  } else if(document.getElementById('high_intervention_diet').checked){
+       intervention_diet = "high";
+  } else if(document.getElementById('very_high_intervention_diet').checked){
+       intervention_diet = "very_high";
+  }else{
+       intervention_diet = null;
+  }
+  
+   var intervention_exercise = null;
+   if(document.getElementById('very_low_intervention_exercise').checked){
+         intervention_exercise = "0_3";
+    } else if(document.getElementById('low_intervention_exercise').checked){
+         intervention_exercise = "3_4.75";
+    } else if(document.getElementById('medium_intervention_exercise').checked){
+         intervention_exercise = "4.75_8";
+    } else if(document.getElementById('high_intervention_exercise').checked){
+         intervention_exercise = ">8";
+    }else{
+         intervention_exercise = null;
+    }
+  
   var age = document.getElementById('ageInput').value;
   var TC = document.getElementById('TCInput').value;
   var HDL = document.getElementById('HDLInput').value;
@@ -40,6 +78,8 @@ async function runModel() {
   var champs = document.getElementById('CHAMPS_MVPA_scoreInput').value;
   var postalcode = document.getElementById('postalcodeInput').value;
   var housenumber = document.getElementById('housenumberInput').value;
+  var intervention_sbp = document.getElementById('intervention_sbp').value;
+  var intervention_ldl = document.getElementById('intervention_ldl').value;
   
   var url = 'https://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
 
@@ -61,6 +101,11 @@ async function runModel() {
                        	"\"ex_smoker\" : \"" + ex_smoker + "\","+
                         "\"gender\" : \""+ gender + "\","+
                         "\"SBP\" : \""+ SBP +"\""+
+						"intervention_smoking" : intervention_smoking +
+						"intervention_exercise" : intervention_exercise +
+						"intervention_diet" : intervention_diet +
+						"intervention_sbp" : intervention_sbp +
+						"intervention_ldl" : intervention_ldl + 
                         "}"+
                        "}"
   
@@ -73,11 +118,18 @@ async function runModel() {
     });
 	
 	const json = await response.json();
-	displayResult(json["probabilities"]["CVD"]);
+	displayResult(json);
 }
 
-function displayResult(data) {
+function displayResult(json) {
   const resultContainer = document.getElementById('resultContainer');
 
-  resultContainer.textContent = `Your risk of CVD is ${ data } %`;
+  var test = ""
+  if( json["probabilities"]["CVD"] != null){
+    text =`Your risk of CVD is ${ json["probabilities"]["CVD"] } %`
+  }else{
+
+    text =`Your risk of CVD is ${ json["baseline"]["probabilities"]["CVD"] } %, the intervention will change it to ${ json["changes"]["probabilities"]["CVD"] } %`
+  }
+  resultContainer.textContent = text;
 }
