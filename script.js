@@ -127,7 +127,7 @@ function displayResult(json) {
   const resultContainer = document.getElementById('resultContainer');
 
   var test = ""
-  if( json["probabilities"]["CVD"] != null){
+  if( json["probabilities"] != undefined){
     text =`Your risk of CVD is ${ json["probabilities"]["CVD"] } %`
   }else{
     text =`Your risk of CVD is ${ json["baseline"]["probabilities"]["CVD"] } %, the intervention will change it to ${ json["changes"]["probabilities"]["CVD"] } %`
