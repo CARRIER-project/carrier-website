@@ -101,11 +101,11 @@ async function runModel() {
                        	"\"ex_smoker\" : \"" + ex_smoker + "\","+
                         "\"gender\" : \""+ gender + "\","+
                         "\"SBP\" : \""+ SBP +"\""+
-						"intervention_smoking" : intervention_smoking +
-						"intervention_exercise" : intervention_exercise +
-						"intervention_diet" : intervention_diet +
-						"intervention_sbp" : intervention_sbp +
-						"intervention_ldl" : intervention_ldl + 
+						"intervention_smoking\" : \"" intervention_smoking "\","+
+						"intervention_exercise\" : \"" intervention_exercise "\","+
+						"intervention_diet\" : \"" intervention_diet "\","+
+						"intervention_sbp\" : \""intervention_sbp "\","+
+						"intervention_ldl\" : \"" intervention_ldl "\","+
                         "}"+
                        "}"
 
