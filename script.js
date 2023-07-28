@@ -172,14 +172,14 @@ async function runModel() {
       },
       body: requestBody,
     });
-	
+	console.log(requestBody)
 	const json = await response.json();
 	displayResult(json);
 }
 
 function displayResult(json) {
   const resultContainer = document.getElementById('resultContainer');
-
+  console.log(json)
   var test = ""
   if( json["probabilities"] != undefined){
     text =`Your risk of CVD is ${ json["probabilities"]["CVD"] } %`
