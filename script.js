@@ -125,28 +125,28 @@ async function runModel() {
                         "\"RAS_inhibitors\" : \"" + RAS_inhibitors  + "\","+
                         "\"current_smoker\" : \""+ current_smoker+  "\","+
                         "\"lipid_modifying_agents\" : \""+ lipid_modifying_agents +"\""
-   if(intervention_smoking != ""){
+   if(TC != ""){
                requestBody += ",\"TC\" : \""+ TC + "\""
    }
-   if(intervention_smoking != ""){
+   if(HDL != ""){
                   requestBody += ",\"HDL\" : \""+ HDL + "\""
    }
-   if(intervention_smoking != ""){
+   if(age != ""){
                   requestBody += ",\"age\" : \""+ age + "\""
    }
-   if(intervention_smoking != ""){
+   if(postalcode != ""){
                   requestBody += ",\"address_postcode\" : \""+ postalcode + "\""
    }
-   if(intervention_smoking != ""){
+   if(housenumber != ""){
                   requestBody += ",\"address_house_number\" : \""+ housenumber + "\""
    }
-   if(intervention_smoking != ""){
+   if(champs != ""){
                   requestBody += ",\"CHAMPS_MVPA_score\" : \"" + champs + "\""
    }
-   if(intervention_smoking != ""){
+   if(eetscore != ""){
                   requestBody += ",\"eetscore\" : \""+ eetscore + "\""
    }
-    if(intervention_smoking != ""){
+    if(SBP != ""){
                    requestBody += ",\"SBP\" : \""+ SBP +"\""
     }
     if(intervention_smoking != null){
