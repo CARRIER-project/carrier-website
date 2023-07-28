@@ -4,7 +4,7 @@ layout: default
 
 <script src="script.js"></script>
 
-# Please provide the following information
+# Please provide the following information, this basic information is mandatory.
 
 <form>
 Do you use antihypertensives: <input type="radio" name="antihypertensives" id="yes_antihypertensives" value ="true" checked /> Yes <input type="radio" name="antihypertensives" id="no_antihypertensives"/> No
@@ -57,7 +57,7 @@ What is your housenumber: <input type="number" id="housenumberInput" placeholder
 </form>
 
 
-Interventions:
+Please enter any relevant interventions, these values are optional.
 <form>
 Intervention SBP: <input type="radio" name="intervention_sbp" id="very_low_intervention_sbp" value ="true"/> <120 <input type="radio" name="intervention_sbp" id="low_intervention_sbp"/> 120-130 <input type="radio" name="intervention_sbp" id="medium_intervention_sbp"/> 130-140 <input type="radio" name="intervention_sbp" id="high_intervention_sbp"/> 140-150 <input type="radio" name="intervention_sbp" id="very_high_intervention_sbp"/> 150-160 <input type="radio" name="intervention_sbp" id="ultra_intervention_sbp"/> >160 <input type="radio" name="intervention_sbp" id="nothing_sbp"/> No intervention
 </form>
