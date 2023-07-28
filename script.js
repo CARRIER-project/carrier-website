@@ -112,6 +112,7 @@ async function runModel() {
   var champs = document.getElementById('CHAMPS_MVPA_scoreInput').value;
   var postalcode = document.getElementById('postalcodeInput').value;
   var housenumber = document.getElementById('housenumberInput').value;
+  var ldl = document.getElementById('ldlInput').value;
   
   var url = 'https://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
    var requestBody = "{"+
@@ -127,6 +128,9 @@ async function runModel() {
    if(TC != ""){
                requestBody += ",\"TC\" : \""+ TC + "\""
    }
+   if(ldl != ""){
+                  requestBody += ",\"LDL\" : \""+ ldl + "\""
+      }
    if(HDL != ""){
                   requestBody += ",\"HDL\" : \""+ HDL + "\""
    }

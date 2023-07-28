@@ -55,7 +55,9 @@ What is your postalcode: <input type="string" id="postalcodeInput" placeholder="
 What is your housenumber: <input type="number" id="housenumberInput" placeholder="housenumber">
 <form>
 </form>
-
+What is your LDL: <input type="number" id="ldlInput" placeholder="ldl">
+<form>
+</form>
 
 Please enter any relevant interventions, these values are optional.
 <form>
