@@ -58,9 +58,9 @@ What is your housenumber: <input type="number" id="housenumberInput" placeholder
 
 
 Interventions:
-</form>
-Intervention SBP: <input type="number" id="intervention_sbp" placeholder="intervention_sbp">
 <form>
+Intervention SBP: <input type="radio" name="intervention_sbp" id="very_low_intervention_sbp" value ="true"/> <120 <input type="radio" name="intervention_sbp" id="low_intervention_sbp"/> 120-130 <input type="radio" name="intervention_sbp" id="medium_intervention_sbp"/> 130-140 <input type="radio" name="intervention_sbp" id="high_intervention_sbp"/> 140-150 <input type="radio" name="intervention_sbp" id="very_high_intervention_sbp"/> 150-160 <input type="radio" name="intervention_sbp" id="ultra_intervention_sbp"/> >160 <input type="radio" name="intervention_sbp" id="nothing_sbp"/> No intervention
+</form>
 <form>
 Intervention LDL: <input type="radio" name="intervention_LDL" id="very_low_intervention_LDL" value ="true"/> <1.0 <input type="radio" name="intervention_LDL" id="low_intervention_LDL"/> 1.0-1.4 <input type="radio" name="intervention_LDL" id="medium_intervention_LDL"/> 1.4-1.8 <input type="radio" name="intervention_LDL" id="high_intervention_LDL"/> 1.8-2.6 <input type="radio" name="intervention_LDL" id="very_high_intervention_LDL"/> 2.6-3.0 <input type="radio" name="intervention_LDL" id="ultra_intervention_LDL"/> >3.0 <input type="radio" name="intervention_LDL" id="nothing_LDL"/> No intervention
 </form>

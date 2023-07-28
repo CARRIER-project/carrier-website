@@ -73,6 +73,23 @@ async function runModel() {
     }else{
          intervention_LDL = null;
     }
+
+  var intervention_sbp = null;
+      if(document.getElementById('very_low_intervention_sbp').checked){
+           intervention_sbp = "<120";
+      } else if(document.getElementById('low_intervention_sbp').checked){
+           intervention_sbp = "120_130";
+      } else if(document.getElementById('medium_intervention_sbp').checked){
+           intervention_sbp = "130_140";
+      } else if(document.getElementById('high_intervention_sbp').checked){
+           intervention_sbp = "140_150";
+      } else if(document.getElementById('very_high_intervention_sbp').checked){
+           intervention_sbp = "150_160";
+      }else if(document.getElementById('ultra_intervention_sbp').checked){
+           intervention_sbp = ">160";
+      }else{
+           intervention_sbp = null;
+      }
   
    var intervention_exercise = null;
    if(document.getElementById('very_low_intervention_exercise').checked){
