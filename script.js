@@ -36,7 +36,7 @@ async function runModel() {
   var intervention_smoking = null;
   if(document.getElementById('no_intervention_smoking').checked){
     intervention_smoking = "no";
-  }if(document.getElementById('yes_intervention_smoking').checked){
+  }else if(document.getElementById('yes_intervention_smoking').checked){
     intervention_smoking = "yes";
   }else{
     intervention_smoking = null;
@@ -114,7 +114,6 @@ async function runModel() {
   var housenumber = document.getElementById('housenumberInput').value;
   
   var url = 'https://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
-    console.log(intervention_smoking)
    var requestBody = "{"+
                         "\"input\" : {"+
                         "\"ex_smoker\" : \"" + ex_smoker + "\","+
@@ -165,9 +164,6 @@ async function runModel() {
             requestBody += ",\"intervention_ldl\" : \"" + intervention_LDL + "\""
 	}
      requestBody +="}"+"}"
-
-
-    console.log(requestBody)
   
   const response = await fetch(url, {
       method: 'POST',
@@ -188,7 +184,6 @@ function displayResult(json) {
   if( json["probabilities"] != undefined){
     text =`Your risk of CVD is ${ json["probabilities"]["CVD"] } %`
   }else{
-    console.log(json)
     text =`Your risk of CVD is ${ json["baseline"]["probabilities"]["CVD"] } %, the intervention will change it to ${ json["changes"]["probabilities"]["CVD"] } %`
   }
   resultContainer.textContent = text;
