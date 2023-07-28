@@ -61,11 +61,11 @@ Interventions:
 </form>
 Intervention SBP: <input type="number" id="intervention_sbp" placeholder="intervention_sbp">
 <form>
+<form>
+Intervention LDL: <input type="radio" name="intervention_LDL" id="very_low_intervention_LDL" value ="true"/> <1.0 <input type="radio" name="intervention_LDL" id="low_intervention_LDL"/> 1.0-1.4 <input type="radio" name="intervention_LDL" id="medium_intervention_LDL"/> 1.4-1.8 <input type="radio" name="intervention_LDL" id="high_intervention_LDL"/> 1.8-2.6 <input type="radio" name="intervention_LDL" id="very_high_intervention_LDL"/> 2.6-3.0 <input type="radio" name="intervention_LDL" id="ultra_intervention_LDL"/> >3.0 <input type="radio" name="intervention_LDL" id="nothing_LDL"/> No intervention
 </form>
-Intervention LDL: <input type="number" id="intervention_ldl" placeholder="intervention_ldl">
 <form>
-<form>
-Intervention smoking: <input type="radio" name="intervention_smoking" id="yes_intervention_smoking" value ="true"/> Yes <input type="radio" name="intervention_smoking" id="no_intervention_smoking"/> No <input type="radio" name="intervention_smoking" id="nothing_smoking"/> No intervention
+Intervention Smoking: <input type="radio" name="intervention_smoking" id="yes_intervention_smoking" value ="true"/> Yes <input type="radio" name="intervention_smoking" id="no_intervention_smoking"/> No <input type="radio" name="intervention_smoking" id="nothing_smoking"/> No intervention
 </form>
 <form>
 Intervention diet: <input type="radio" name="intervention_diet" id="very_low_intervention_diet" value ="true"/> Very low <input type="radio" name="intervention_diet" id="low_intervention_diet"/> Low <input type="radio" name="intervention_diet" id="medium_intervention_diet"/> Medium <input type="radio" name="intervention_diet" id="high_intervention_diet"/> High <input type="radio" name="intervention_diet" id="very_high_intervention_diet"/> Very High <input type="radio" name="intervention_diet" id="nothing_diet"/> No intervention

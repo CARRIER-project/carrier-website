@@ -56,6 +56,23 @@ async function runModel() {
   }else{
        intervention_diet = null;
   }
+
+  var intervention_LDL = null;
+    if(document.getElementById('very_low_intervention_LDL').checked){
+         intervention_LDL = "<1.0";
+    } else if(document.getElementById('low_intervention_LDL').checked){
+         intervention_LDL = "1.0_1.4";
+    } else if(document.getElementById('medium_intervention_LDL').checked){
+         intervention_LDL = "1.4_1.8";
+    } else if(document.getElementById('high_intervention_LDL').checked){
+         intervention_LDL = "1.8_2.6";
+    } else if(document.getElementById('very_high_intervention_LDL').checked){
+         intervention_LDL = "2.6_3.0";
+    }else if(document.getElementById('ultra_intervention_LDL').checked){
+         intervention_LDL = ">3.0";
+    }else{
+         intervention_LDL = null;
+    }
   
    var intervention_exercise = null;
    if(document.getElementById('very_low_intervention_exercise').checked){
@@ -79,7 +96,6 @@ async function runModel() {
   var postalcode = document.getElementById('postalcodeInput').value;
   var housenumber = document.getElementById('housenumberInput').value;
   var intervention_sbp = document.getElementById('intervention_sbp').value;
-  var intervention_ldl = document.getElementById('intervention_ldl').value;
   
   var url = 'https://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
 
@@ -105,11 +121,11 @@ async function runModel() {
 						"\"intervention_exercise\" : \"" + intervention_exercise + "\","+
 						"\"intervention_diet\" : \"" + intervention_diet + "\","+
 						"\"intervention_sbp\" : \"" + intervention_sbp + "\","+
-						"\"intervention_ldl\" : \"" + intervention_ldl + "\""+
+						"\"intervention_ldl\" : \"" + intervention_LDL + "\""+
                         "}"+
                        "}"
 
-   console.log(requestBody)
+
   
   const response = await fetch(url, {
       method: 'POST',
@@ -130,6 +146,7 @@ function displayResult(json) {
   if( json["probabilities"] != undefined){
     text =`Your risk of CVD is ${ json["probabilities"]["CVD"] } %`
   }else{
+    console.log(json)
     text =`Your risk of CVD is ${ json["baseline"]["probabilities"]["CVD"] } %, the intervention will change it to ${ json["changes"]["probabilities"]["CVD"] } %`
   }
   resultContainer.textContent = text;
