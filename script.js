@@ -112,7 +112,6 @@ async function runModel() {
   var champs = document.getElementById('CHAMPS_MVPA_scoreInput').value;
   var postalcode = document.getElementById('postalcodeInput').value;
   var housenumber = document.getElementById('housenumberInput').value;
-  var intervention_sbp = document.getElementById('intervention_sbp').value;
   
   var url = 'https://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
 
@@ -133,14 +132,23 @@ async function runModel() {
                         "\"eetscore\" : \""+ eetscore + "\","+
                        	"\"ex_smoker\" : \"" + ex_smoker + "\","+
                         "\"gender\" : \""+ gender + "\","+
-                        "\"SBP\" : \""+ SBP +"\","+
-						"\"intervention_smoking\" : \"" + intervention_smoking + "\","+
-						"\"intervention_exercise\" : \"" + intervention_exercise + "\","+
-						"\"intervention_diet\" : \"" + intervention_diet + "\","+
-						"\"intervention_sbp\" : \"" + intervention_sbp + "\","+
-						"\"intervention_ldl\" : \"" + intervention_LDL + "\""+
-                        "}"+
-                       "}"
+                        "\"SBP\" : \""+ SBP +"\""
+    if(intervention_smoking != null){
+        requestBody +=  ",\"intervention_smoking\" : \"" + intervention_smoking + "\""
+    }
+	if(intervention_exercise != null){
+            requestBody +=	",\"intervention_exercise\" : \"" + intervention_exercise + "\""
+    }
+    if(intervention_diet != null){
+            requestBody += ",\"intervention_diet\" : \"" + intervention_diet + "\""
+	}
+	if(intervention_sbp != null){
+            requestBody += ",\"intervention_sbp\" : \"" + intervention_sbp + "\""
+    }
+	if(intervention_LDL != null){
+            requestBody += ",\"intervention_ldl\" : \"" + intervention_LDL + "\""
+	}
+     requestBody +="}"+"}"
 
 
   
