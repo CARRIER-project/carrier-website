@@ -183,7 +183,7 @@ function displayResult(json) {
   var test = ""
   if( json["probabilities"] != undefined){
     text =`Your risk of CVD is ${ json["probabilities"]["CVD"] } %`
-  }else if json["baseline"] != undefined{
+  }else if (json["baseline"] != undefined){
     text =`Your risk of CVD is ${ json["baseline"]["probabilities"]["CVD"] } %, the intervention will change it to ${ json["changes"]["probabilities"]["CVD"] } %`
   }else{
     text ="Something broke, please try again contact us to submit a bugreport"
