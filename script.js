@@ -151,6 +151,7 @@ async function runModel() {
      requestBody +="}"+"}"
 
 
+    console.log(requestBody)
   
   const response = await fetch(url, {
       method: 'POST',
