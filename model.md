@@ -46,6 +46,9 @@ What is your eetscore: <input type="number" id="eetscoreInput" placeholder="Eets
 What is your SBP: <input type="number" id="SBPInput" placeholder="SBP">
 <form>
 </form>
+What is your LDL: <input type="number" id="ldlInput" placeholder="ldl">
+<form>
+</form>
 What is your CHAMPS_MVPA_score: <input type="number" id="CHAMPS_MVPA_scoreInput" placeholder="CHAMPS_MVPA_score">
 <form>
 </form>
@@ -53,9 +56,6 @@ What is your postalcode: <input type="string" id="postalcodeInput" placeholder="
 <form>
 </form>
 What is your housenumber: <input type="number" id="housenumberInput" placeholder="housenumber">
-<form>
-</form>
-What is your LDL: <input type="number" id="ldlInput" placeholder="ldl">
 <form>
 </form>
 
