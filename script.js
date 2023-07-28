@@ -117,22 +117,38 @@ async function runModel() {
 
    var requestBody = "{"+
                         "\"input\" : {"+
-                       	"\"TC\" : \""+ TC + "\","+
-                       	"\"HDL\" : \""+ HDL + "\","+
-                       	"\"age\" : \""+ age + "\","+
+                        "\"ex_smoker\" : \"" + ex_smoker + "\","+
+                        "\"gender\" : \""+ gender + "\","+
                         "\"antihypertensives\" : \""+ antihypertensives + "\","+
-                       	"\"beta_blocking_agents\" : \""+ beta_blocking_agents + "\","+
+                        "\"beta_blocking_agents\" : \""+ beta_blocking_agents + "\","+
                         "\"calcium_channel_blockers\" : \""+ calcium_channel_blockers + "\","+
                         "\"RAS_inhibitors\" : \"" + RAS_inhibitors  + "\","+
-                        "\"lipid_modifying_agents\" : \""+ lipid_modifying_agents +"\","+
-                       	"\"address_postcode\" : \""+ postalcode + "\","+
-                        "\"address_house_number\" : \""+ housenumber + "\","+
-                       	"\"CHAMPS_MVPA_score\" : \"" + champs + "\","+
                         "\"current_smoker\" : \""+ current_smoker+  "\","+
-                        "\"eetscore\" : \""+ eetscore + "\","+
-                       	"\"ex_smoker\" : \"" + ex_smoker + "\","+
-                        "\"gender\" : \""+ gender + "\","+
-                        "\"SBP\" : \""+ SBP +"\""
+                        "\"lipid_modifying_agents\" : \""+ lipid_modifying_agents +"\""
+   if(intervention_smoking != ""){
+               requestBody += ",\"TC\" : \""+ TC + "\""
+   }
+   if(intervention_smoking != ""){
+                  requestBody += ",\"HDL\" : \""+ HDL + "\""
+   }
+   if(intervention_smoking != ""){
+                  requestBody += ",\"age\" : \""+ age + "\""
+   }
+   if(intervention_smoking != ""){
+                  requestBody += ",\"address_postcode\" : \""+ postalcode + "\""
+   }
+   if(intervention_smoking != ""){
+                  requestBody += ",\"address_house_number\" : \""+ housenumber + "\""
+   }
+   if(intervention_smoking != ""){
+                  requestBody += ",\"CHAMPS_MVPA_score\" : \"" + champs + "\""
+   }
+   if(intervention_smoking != ""){
+                  requestBody += ",\"eetscore\" : \""+ eetscore + "\""
+   }
+    if(intervention_smoking != ""){
+                   requestBody += ",\"SBP\" : \""+ SBP +"\""
+    }
     if(intervention_smoking != null){
         requestBody +=  ",\"intervention_smoking\" : \"" + intervention_smoking + "\""
     }
