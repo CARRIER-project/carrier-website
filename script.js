@@ -47,8 +47,8 @@ async function runModel() {
        intervention_diet = "very_low";
   } else if(document.getElementById('low_intervention_diet').checked){
        intervention_diet = "low";
-  } else if(document.getElementById('medium_intervention_diet').checked){
-       intervention_diet = "medium";
+  } else if(document.getElementById('average_intervention_diet').checked){
+       intervention_diet = "average";
   } else if(document.getElementById('high_intervention_diet').checked){
        intervention_diet = "high";
   } else if(document.getElementById('very_high_intervention_diet').checked){
