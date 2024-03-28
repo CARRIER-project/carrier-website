@@ -114,7 +114,7 @@ async function runModel() {
   var housenumber = document.getElementById('housenumberInput').value;
   var ldl = document.getElementById('ldlInput').value;
   
-  var url = 'http://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
+  var url = 'https://riskmodel.carrier-mu.src.surf-hosted.nl:443/estimateBaseLineRisk';
    var requestBody = "{"+
                         "\"input\" : {"+
                         "\"ex_smoker\" : \"" + ex_smoker + "\","+
