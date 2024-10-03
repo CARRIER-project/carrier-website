@@ -4,15 +4,12 @@ title: Partners
 ---
 
 * Maastricht University: [https://www.maastrichtuniversity.nl/](https://www.maastrichtuniversity.nl/)
-* Maastro [https://maastro.nl/] (https://maastro.nl/)
+* Maastro [https://maastro.nl/](https://maastro.nl/)
 * Maastricht UMC+ [https://www.mumc.nl/](https://www.mumc.nl/)
 * CBS [https://www.cbs.nl/](https://www.cbs.nl/)
 * Sananet [https://sananet.nl/](https://sananet.nl/)
 
----
-
-title: Consortium
----
+Consortium members:
 
 * Andre Dekker, Professor in Clinical Data Science, Maastricht University
 * Inigo Bermejo, Postdoctoral researcher, Maastricht University
